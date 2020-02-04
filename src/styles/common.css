@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url("https://assets.website-files.com/5bd78ed5d864832d0fcb2060/5d67067f70ef9c53907a9965_Dave%20Witt%20FB%20Contest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(0px);
+  }
+
+  html, body, #root, .centered {
+    height: 100vh;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .no-cursor {
+    cursor: not-allowed;
+  }
+  
+  .brand-logo {
+    will-change: width, height;
+    width: 140px;
+  }

@@ -1,0 +1,20 @@
+.centered {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 100px);
+}
+
+#title {
+    font-size: 86px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+#credit {
+    font-weight: 200;
+    color: #fff;
+    opacity: .5;
+}

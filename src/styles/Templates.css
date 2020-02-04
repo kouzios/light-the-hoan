@@ -1,0 +1,43 @@
+#title {
+    font-size: 86px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+#credit {
+    font-weight: 200;
+    color: #fff;
+    opacity: .5;
+}
+
+#search {
+    width: 50%;
+    height: 45px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px 25px 25px;
+    box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.1);
+}
+
+#template {
+    max-width: 85%;
+    height: calc(100vh - 350px);
+    overflow-y: auto;
+}
+
+#date {
+    font-size: 32px;
+    color: #fff;
+    opacity: .5;
+}
+
+#back {
+    margin-top: 20px;
+    height: 75px;
+    filter: brightness(65%)
+}

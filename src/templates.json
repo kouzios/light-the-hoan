@@ -1,0 +1,38 @@
+[
+    {
+      "title": "A midsummer night's dream",
+      "image": "amnd_102343132.png",
+      "gif": "amnd_12312312.gif",
+      "type": "template"
+    },
+    {
+      "title": "Jacob Jocobo",
+      "image": "jj_102343132.png",
+      "gif": "jj_12312312.gif",
+      "type": "public"
+    },
+    {
+      "title": "Autumn Breeze",
+      "image": "ab_43214532.jpg",
+      "gif": "ab_43214532.gif",
+      "type": "template"
+    },
+    {
+      "title": "Christopher Fredericks Jr.",
+      "image": "cfj_03423429532.png",
+      "gif": "cfj_12312312.gif",
+      "type": "kids"
+    },
+    {
+      "title": "A brisk winter's eve",
+      "image": "abwe_102343132.png",
+      "gif": "abwe_12312312.gif",
+      "type": "template"
+    },
+    {
+      "title": "Jessica Hendrickson",
+      "image": "jh_434532532.png",
+      "gif": "jh_12312312.gif",
+      "type": "public"
+    }
+]
