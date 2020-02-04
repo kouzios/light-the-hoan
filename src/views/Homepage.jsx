@@ -33,7 +33,10 @@ class Homepage extends Component {
         <div className='centered'>
           <Col>
             <Row className='d-flex justify-content-center'>
-              <span id='title'>Light the Hoan Bridge</span>
+              <span id='credit'>A Committee of the Daniel W. Hoan Foundation</span>
+            </Row>
+            <Row className='d-flex justify-content-center'>
+              <span id='title'>Light the Hoan</span>
             </Row>
             <Row className='d-flex justify-content-center'>
               <span id='credit'>Image Credit: Dave Witt</span>
