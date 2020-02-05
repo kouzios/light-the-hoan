@@ -1,0 +1,30 @@
+#time {
+    width: 90%;
+    height: 150px;
+}
+
+#time .row, .col-md-2, .col-md-2 .card{
+    height: 100%;
+}
+
+.col-md-2 .card {
+    width: 100%;
+}
+
+.col-md-2 .reserved {
+    background-color: lightgrey;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.col-md-2 .unreserved {
+    background-color: lightgrey;
+    opacity: 1;
+    width: 100%;
+}
+
+.modal #timemodal{
+    margin-top: 10%;
+}
+
+

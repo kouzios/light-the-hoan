@@ -19,6 +19,7 @@ class Scheduled extends Component {
     componentDidMount() {
         setTimeout(() => {
             window.location.href = '/'
+            window.localStorage.removeItem("name")
         }, 5000)
     }
 

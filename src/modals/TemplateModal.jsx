@@ -38,15 +38,15 @@ class TemplateModal extends Component {
                         <img alt={this.state.title} src={this.state.gif}/>
                     </Row>
                 </Modal.Body>
-                <Modal.Footer>
-                <Button variant="secondary" onClick={this.props.onHide}>
-                    Close
-                </Button>
-                <Link to='/scheduled'>
-                    <Button variant="primary">
-                        Schedule
+                <Modal.Footer className='d-flex justify-content-around'>
+                    <Button size='lg' variant="secondary" onClick={this.props.onHide}>
+                        Close
                     </Button>
-                </Link>
+                    <Link to='/scheduled'>
+                        <Button size='lg' variant="primary">
+                            Schedule
+                        </Button>
+                    </Link>
                 </Modal.Footer>
             </Modal>
         );

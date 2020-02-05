@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import moment from 'moment';
+import moment from 'moment-timezone'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -81,7 +81,7 @@ class Templates extends Component {
     }
 
     parseDate(passedDate) {
-        return moment(passedDate).format('MM/DD/YYYY');
+        return moment.tz(passedDate, "America/Chicago").format('MM/DD/YYYY');
     }
 
     render() {
@@ -95,14 +95,11 @@ class Templates extends Component {
                         </Link>
                     </Col>
                     <Col md='10'>
-                        <span id='title'>Select a light show</span>
+                        <span id='title'>Please Select a light show</span>
                     </Col>
                 </Row>
                 <Row className='d-flex justify-content-center'>
-                    <span id='date'>{this.parseDate(window.localStorage.getItem("date"))}</span>
-                </Row>
-                <Row className='d-flex justify-content-center'>
-                    <span id='credit'>Image Credit: Dave Witt</span>
+                    <span id='date'>{this.parseDate(new Date())}</span>
                 </Row>
                 <Row className='d-flex justify-content-center'>
                     <input placeholder='Template title...' id='search' type='text' onChange={evt => this.filter(evt.target.value)}/>
