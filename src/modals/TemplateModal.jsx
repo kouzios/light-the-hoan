@@ -31,12 +31,14 @@ class TemplateModal extends Component {
                 <Modal.Title>{this.state.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <span>Your Preview: </span>
-                    </Row>
-                    <Row>
-                        <img alt={this.state.title} src={this.state.gif}/>
-                    </Row>
+                    <div className='container'>
+                        <Row>
+                            <span>Your Preview: </span>
+                        </Row>
+                        <Row>
+                            <img alt={this.state.title} src={this.state.gif}/>
+                        </Row>
+                    </div>
                 </Modal.Body>
                 <Modal.Footer className='d-flex justify-content-around'>
                     <Button size='lg' variant="secondary" onClick={this.props.onHide}>
