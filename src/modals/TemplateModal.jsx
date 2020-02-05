@@ -36,7 +36,7 @@ class TemplateModal extends Component {
                             <span>Your Preview: </span>
                         </Row>
                         <Row>
-                            <img alt={this.state.title} src={this.state.gif}/>
+                            <img  className='mw-100 mh-100' alt={this.state.title} src={this.state.gif}/>
                         </Row>
                     </div>
                 </Modal.Body>

@@ -38,7 +38,7 @@ class Templates extends Component {
                         </Row>
                         <hr/>
                         <Row className='image'>
-                            <img key={'image' + index} alt={template.title} src={template.image}/>
+                            <img className='mw-100 mh-100' key={'image' + index} alt={template.title} src={template.image}/>
                         </Row>
                     </Col>
                 </Card>
