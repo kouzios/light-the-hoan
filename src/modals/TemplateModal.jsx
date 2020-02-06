@@ -41,7 +41,7 @@ class TemplateModal extends Component {
                     </div>
                 </Modal.Body>
                 <Modal.Footer className='d-flex justify-content-around'>
-                    <Button size='lg' variant="secondary" onClick={this.props.onHide}>
+                    <Button size='lg' variant="secondary" onClick={this.props.handleClose}>
                         Close
                     </Button>
                     <Link to='/scheduled'>

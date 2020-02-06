@@ -41,3 +41,8 @@
     height: 75px;
     filter: brightness(65%)
 }
+
+#search-img {
+    width: 30px;
+    height: 30px;
+}

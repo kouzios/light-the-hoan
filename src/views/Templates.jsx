@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import TemplateModal from '../modals/TemplateModal.jsx'
+import InputGroup from 'react-bootstrap/InputGroup'
 
 import {Link} from 'react-router-dom'
 
@@ -102,7 +103,14 @@ class Templates extends Component {
                     <span id='date'>{this.parseDate(new Date())}</span>
                 </Row>
                 <Row className='d-flex justify-content-center'>
-                    <input placeholder='Template title...' id='search' type='text' onChange={evt => this.filter(evt.target.value)}/>
+                    <InputGroup className='d-flex justify-content-center'>
+                        <InputGroup.Prepend>
+                            <InputGroup.Text id="inputGroupPrepend">
+                                <img id='search-img' src='search.png' alt='Search'/>
+                            </InputGroup.Text>
+                        </InputGroup.Prepend>
+                        <input placeholder='Template title...' id='search' type='text' onChange={evt => this.filter(evt.target.value)}/>
+                    </InputGroup>
                 </Row>
             </Col>
             <Col className='d-flex justify-content-center'>
