@@ -32,7 +32,7 @@ class Homepage extends Component {
             <Row className='d-flex justify-content-center'>
               <TimeSelection setTime={this.setTime}/>
             </Row>
-            <Row className='mt-5 d-flex justify-content-center'>
+            <Row style={{"margin-top":"150px"}} className='d-flex justify-content-center'>
               <span className='credit'>Image Credit: Dave Witt</span>
             </Row>
           </Col>

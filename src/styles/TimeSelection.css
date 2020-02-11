@@ -3,21 +3,25 @@
     height: 150px;
 }
 
-#time .row, .col-md-2, .col-md-2 .card{
+#time .row, .col-md-1, .col-md-1 .card{
     height: 100%;
+    padding: 0px !important;
 }
 
-.col-md-2 .card {
-    width: 100%;
+#time .card {
+    width: 50px !important;
+    margin: 0px !important;
+    border: 1px solid grey;
+    border-radius: 0rem;
 }
 
-.col-md-2 .reserved {
+.reserved {
     background-color: lightgrey;
     opacity: .5;
     cursor: not-allowed;
 }
 
-.col-md-2 .unreserved {
+.unreserved {
     background-color: lightgrey;
     opacity: 1;
     width: 100%;

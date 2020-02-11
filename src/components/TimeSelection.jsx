@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row'
-import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col'
 import moment from 'moment-timezone'
 import TimeModal from '../modals/TimeModal'
 
@@ -22,12 +20,14 @@ class TimeSelection extends Component {
       this.handleClose = this.handleClose.bind(this)
     }
 
-    show(time) {
-        time = time.setDate(time.getDate() + 2)
-        this.setState({
-            show: true,
-            time: moment.tz(time, "America/Chicago").format("hh:mm A on MMM d, YYYY ")
-        })
+    show(time, reserved) {
+        if(reserved === 'unreserved') {
+            time = time.setDate(time.getDate() + 2)
+            this.setState({
+                show: true,
+                time: moment.tz(time, "America/Chicago").format("hh:mm A on MMM d, YYYY ")
+            })
+        }
     }
 
     handleClose() {
@@ -41,24 +41,23 @@ class TimeSelection extends Component {
         return (
             mappable.map((reservation, index) => {
                 var date = new Date();
-                date.setHours(hours + index)
-                date.setMinutes(0)
+                date.setHours(hours)
+                date.setMinutes(15*index)
 
-                var user = reservation.user;
+                var user = "Reserved by: " + reservation.user;
                 var reserved = 'reserved';
 
-                if(user === "") {
-                    user = "Not Reserved"
+                if(reservation.user === "") {
+                    user = "Unreserved"
                     reserved = 'unreserved'
                 }
 
                 return (
-                    <Col md='2' key={'col' + index}>
-                        <Card className={reserved + ' card clickable'} key={'card' + index} onClick={() => this.show(date)}>
-                            <span key={'reservation' + index}>{user}</span>
+                    <div title={user} key={'col' + index}>
+                        <div className={reserved + ' card clickable d-flex align-items-bottom'} key={'card' + index} onClick={() => this.show(date, reserved)}>
                             <span key={'date'+index}>{moment.tz(date, 'America/Chicago').format("hh:mm A")}</span>
-                        </Card>
-                    </Col>
+                        </div>
+                    </div>
                 )
             })
         )
