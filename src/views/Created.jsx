@@ -6,7 +6,7 @@ import {Redirect} from 'react-router-dom';
 
 import '../styles/Homepage.css'
 
-class Scheduled extends Component {
+class Created extends Component {
     constructor(props) {
       super(props);
 
@@ -33,7 +33,7 @@ class Scheduled extends Component {
         <div className='centered'>
           <Col>
             <Row className='d-flex justify-content-center'>
-              <span id='title'>Schedule successful!</span>
+              <span id='title'>Creation successful!</span>
             </Row>
             <Row className='d-flex justify-content-center'>
               <span className='alt-text'>You will be redirected shortly</span>
@@ -45,4 +45,4 @@ class Scheduled extends Component {
     }
 }
 
-export default Scheduled
+export default Created
