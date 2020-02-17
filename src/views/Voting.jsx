@@ -20,7 +20,7 @@ class Voting extends Component {
       return (
         <div className='centered'>
           <Col className='h-100'>
-            <Row>
+            <Row className='d-flex justify-content-left'>
                 <Col md='1'>
                     <Link to= '/redirection'>
                         <img className='clickable' id='back' src='back.png' alt="Go Back"/>

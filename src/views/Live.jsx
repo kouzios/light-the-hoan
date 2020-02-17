@@ -37,7 +37,7 @@ class Live extends Component {
                 <img id='create-image' alt='design plan' src='live-sample.png'/>
             </Row>
             <Link to='/redirection'>
-                <Button className='mt-2' size='lg' variant="secondary">
+                <Button className='mt-2' size='md' variant="secondary">
                     Go Back
                 </Button>
             </Link>

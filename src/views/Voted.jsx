@@ -36,6 +36,9 @@ class Voted extends Component {
               <span id='title'>Voting successful!</span>
             </Row>
             <Row className='d-flex justify-content-center'>
+              <span className='alt-text'><h3>Expect a confirmation email shortly!</h3></span>
+            </Row>
+            <Row className='d-flex justify-content-center'>
               <span className='alt-text'>You will be redirected shortly</span>
             </Row>
           </Col>

@@ -33,9 +33,9 @@ const routing = (
             <Route exact path="/templates" component={Templates} />
             <Route exact path="/create" component={Creation} />
             <Route exact path="/live" component={Live} />
+            <Route exact path="/voted" component={Voted} />
             <Route exact path="/vote" component={Voting} />
             <Route exact path="/redirection" component={Redirection} />
-            <Route exact path="/voted" componet={Voted} />
             <Route exact path="/scheduled" component={Scheduled} />
             <Route exact path="/created" component={Created} />
             <Route path='*' component={Homepage}/>

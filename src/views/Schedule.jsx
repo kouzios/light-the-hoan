@@ -25,12 +25,12 @@ class Schedule extends Component {
       return (
         <div className='centered'>
           <Col className='h-100'>
-            <Row className='d-flex justify-content-left ml-5'>
+            <Row className='w-100 d-flex justify-content-left'>
                 <Link to= '/redirection'>
                     <img className='clickable' id='back' src='back.png' alt="Go Back"/>
                 </Link>
             </Row>
-            <Row id='title' className='d-flex justify-content-center'>
+            <Row id='title' className='w-100 d-flex justify-content-center'>
               <span className='select'>Select a time to get started!</span>
             </Row>
             <Row className='d-flex justify-content-center'>
