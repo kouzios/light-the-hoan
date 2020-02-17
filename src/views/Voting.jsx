@@ -31,7 +31,7 @@ class Voting extends Component {
                 </Col>
             </Row>
             <Row id='create' className='d-flex justify-content-center'>
-                <img id='create-image' alt='design plan' src='vote.jpg'/>
+                <img id='create-image' alt='Voting plan' src='Vote Page.png'/>
             </Row>
             <Link to='/voted'>
                 <Button className='mt-2' size='lg' variant="primary">
